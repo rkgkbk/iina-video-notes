@@ -1,0 +1,6 @@
+{
+  "asrDirectory": "/absolute/path/to/qwen-asr",
+  "ffmpeg": "/opt/homebrew/bin/ffmpeg",
+  "codex": "/opt/homebrew/bin/codex",
+  "chunkSeconds": 180
+}

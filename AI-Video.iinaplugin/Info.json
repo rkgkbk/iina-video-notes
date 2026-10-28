@@ -1,0 +1,11 @@
+{
+  "name": "视频 AI 总结",
+  "identifier": "local.video.ai-summary",
+  "version": "1.1.0",
+  "description": "本地 Qwen-ASR 转写完整视频，通过 Codex CLI 生成总结。",
+  "author": {"name": "Local"},
+  "entry": "main.js",
+  "sidebarTab": {"name": "AI 总结"},
+  "permissions": ["file-system", "show-osd"],
+  "helpPage": "help.html"
+}

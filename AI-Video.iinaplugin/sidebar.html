@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'none'">
+<link rel="stylesheet" href="style.css"><title>AI 总结</title></head>
+<body><header><div class="toolbar"><nav aria-label="内容切换"><button id="summary-tab" aria-pressed="true">总结</button><button id="transcript-tab" aria-pressed="false">全文 <span id="count"></span></button></nav>
+<div class="actions"><button id="start">开始转录</button><button id="stop" class="icon-button" aria-label="停止转写" title="停止" hidden><span class="stop-icon" aria-hidden="true"></span></button><button id="reveal" class="icon-button" aria-label="查看结果文件" title="查看文件" hidden><span class="folder-icon" aria-hidden="true"></span></button></div></div>
+<div class="status-row"><span id="status-dot" aria-hidden="true"></span><p id="status" role="status" aria-live="polite">准备就绪</p><button id="copy" aria-label="复制完整总结" hidden>复制</button></div><progress id="progress" class="sr-only" max="100" value="0" aria-label="处理进度"></progress></header>
+<main><div id="summary"><div class="empty"><h2>先看要点，再看细节</h2><p>先转录完整音轨，再按需生成总结。</p><p>转录在本地完成；完成后手动点击“生成总结”才会调用 Codex。已有结果会自动读取。</p></div></div><div id="transcript" hidden></div></main>
+<footer>时间标记可点击回看 · 转写按 3 分钟分段</footer><script src="ui.js"></script></body></html>
